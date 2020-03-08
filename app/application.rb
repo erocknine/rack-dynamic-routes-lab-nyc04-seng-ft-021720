@@ -6,7 +6,7 @@ class Application
     
     if req.path.match(/items/)
       
-      req.path.split()
+      req.path.split("/items/")
   
   
 end
