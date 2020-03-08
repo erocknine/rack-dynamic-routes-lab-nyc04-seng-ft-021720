@@ -16,6 +16,11 @@ class Application
         resp.write "Item not found"
       end
     else
+      resp.status=404
+      resp.write "Route not found"
+    end
+    resp.finish
+  end
   
   
 end
