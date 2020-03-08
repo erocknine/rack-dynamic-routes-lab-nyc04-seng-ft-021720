@@ -12,7 +12,8 @@ class Application
       if item = @@item.find{|item| item.name == item_name}
         resp.write item.price
       else
-        resp.write 
+        resp.status = 404
+        resp.write ""
   
   
 end
